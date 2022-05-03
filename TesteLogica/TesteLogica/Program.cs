@@ -12,20 +12,13 @@ namespace TesteLogica
 
             if (respostaOpcao == 0) 
             {
-                float ladoA, ladoB, ladoC;
-
-                Console.WriteLine("Insira o lado A do possível Triângulo");
-                ladoA = float.Parse(Console.ReadLine());
-
-                Console.WriteLine("Insira o lado B do possível Triângulo");
-                ladoB = float.Parse(Console.ReadLine());
-
-                Console.WriteLine("Insira o lado C do possível Triângulo");
-                ladoC = float.Parse(Console.ReadLine());
+                IMenuDadosTrianguloCalculo menuDadosTriangulo = Factory.FactoryEngine.ObtemDadosCalculoTriangulo();
+                var dadosObtidosTriangulo  = menuDadosTriangulo.ObtemDadosTriangulo();
 
                 ITriangulo triangulo = Factory.FactoryEngine.ValidaTriangulo();
-                triangulo.ValidaTriangulo(ladoA, ladoB, ladoC);
-
+                triangulo.ValidaTriangulo(dadosObtidosTriangulo.tLadoA, 
+                                          dadosObtidosTriangulo.tLadoB,
+                                          dadosObtidosTriangulo.tLadoC);
             }
             else if(respostaOpcao == 1)
             {

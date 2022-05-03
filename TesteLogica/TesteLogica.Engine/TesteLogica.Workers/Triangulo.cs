@@ -8,23 +8,23 @@ namespace TesteLogica
         {
             if (ladoC > ladoA + ladoB || ladoA > ladoB + ladoC || ladoB > ladoA + ladoC)
             {
-                Console.WriteLine("Dados não formam um triângulo perfeito");
+                Console.WriteLine("\nDados não formam um triângulo perfeito");
             }
             else if (ladoA != ladoB && ladoA != ladoC && ladoB != ladoC)
             {
-                Console.WriteLine("Este é um Esacleno!");
+                Console.WriteLine("\nEste é um Esacleno!");
             }
             else if (ladoA == ladoB && ladoA == ladoC)
             {
-                Console.WriteLine("Este é um Equilatero!");
+                Console.WriteLine("\nEste é um Equilatero!");
             }
             else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC)
             {
-                Console.WriteLine("Este é um Isosceles!");
+                Console.WriteLine("\nEste é um Isosceles!");
             }
             else
             {
-                Console.WriteLine("Inválido!");
+                Console.WriteLine("\nInválido!");
             }
 
             Console.ReadLine();

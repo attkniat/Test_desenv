@@ -16,5 +16,10 @@
         {
             return new MenuInicialOpcoes();
         }
+
+        public static IMenuDadosTrianguloCalculo ObtemDadosCalculoTriangulo()
+        {
+            return new MenuDadosTrianguloCalculo();
+        }
     }
 }
