@@ -6,5 +6,10 @@
         {
             return new Fibonacci();
         }
+
+        public static ITriangulo ValidaTriangulo()
+        {
+            return new Triangulo();
+        }
     }
 }
