@@ -1,4 +1,5 @@
 ﻿using System;
+using TesteLogica;
 
 namespace TesteLogica
 {
@@ -57,28 +58,8 @@ namespace TesteLogica
             }
             else if(respostaOpcao == 1)
             {
-                int tamanhoSequencia = 30;
-
-                Console.WriteLine("\n\n\n");
-                Console.WriteLine($"\n\nRESULTADO DE {tamanhoSequencia} primeiros números:");
-
-                for (int a = 0; a <= tamanhoSequencia; a++)
-                {
-                    Console.Write(" " + Fibonacci(a + 1));
-                }
-                Console.ReadKey();
-
-                static int Fibonacci(int n)
-                {
-                    if (n == 1 || n == 0)
-                    {
-                        return 1;
-                    }
-                    else
-                    {
-                        return Fibonacci(n - 1) + Fibonacci(n - 2);
-                    }
-                }
+                IFibonacci fibonacci = Factory.FactoryEngine.CreateFibonacciSequence();
+                fibonacci.FibonacciEngine();
             }
 
             Console.ReadLine();
