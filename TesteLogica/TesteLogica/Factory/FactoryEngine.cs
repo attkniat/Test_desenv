@@ -11,5 +11,10 @@
         {
             return new Triangulo();
         }
+
+        public static IMenuInicialOpcoes CriaMenuOpcoesIniciais()
+        {
+            return new MenuInicialOpcoes();
+        }
     }
 }
