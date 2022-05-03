@@ -21,5 +21,10 @@
         {
             return new MenuDadosTrianguloCalculo();
         }
+
+        public static ICalculaCasa RetornaCasaComParQdtJanelasComodos()
+        {
+            return new CalculaCasa();
+        }
     }
 }

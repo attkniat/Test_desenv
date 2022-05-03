@@ -1,5 +1,4 @@
 ﻿using System;
-using TesteLogica;
 
 namespace TesteLogica
 {
@@ -24,6 +23,11 @@ namespace TesteLogica
             {
                 IFibonacci fibonacci = Factory.FactoryEngine.CreateFibonacciSequence();
                 fibonacci.FibonacciEngine();
+            }
+            else if (respostaOpcao == 2)
+            {
+                ICalculaCasa calculaCasa = Factory.FactoryEngine.RetornaCasaComParQdtJanelasComodos();
+                calculaCasa.RetornaCasaComNumeroParJanelasComodos();
             }
 
             Console.ReadLine();

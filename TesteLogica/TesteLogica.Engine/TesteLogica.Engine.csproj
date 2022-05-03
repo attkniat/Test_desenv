@@ -4,9 +4,4 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="TesteLogica.Interfaces\TesteLogica.Casa\" />
-    <Folder Include="TesteLogica.Workers\TesteLogica.Casa\" />
-  </ItemGroup>
-
 </Project>
